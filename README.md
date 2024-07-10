@@ -14,6 +14,9 @@ way to set this repo up to preserve the commit history better.
 ### Currently missing
 
 - `bookmarks-persistence.yazi`
+- `current-size.yazi`
+- `message-custom.yazi`
 - `mime.yazi`
 - `keyjump.yazi` (mirror: [mikavilpa/keyjump.yazi](https://github.com/mikavilpas/keyjump.yazi))
+- `qxdrag`
 - `yazi.nvim` (maintained fork: [mikavilpas/yazi.nvim](https://github.com/mikavilpas/yazi.nvim))
