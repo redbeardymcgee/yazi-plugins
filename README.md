@@ -15,5 +15,5 @@ way to set this repo up to preserve the commit history better.
 
 - `bookmarks-persistence.yazi`
 - `mime.yazi`
-- `keyjump.yazi` (mirror: [mikavilpa/keyjump.yazi](https://github.com/mikavilpas/keyjump.yazi))
+- `keyjump.yazi` (mirror: [mikavilpas/keyjump.yazi](https://github.com/mikavilpas/keyjump.yazi))
 - `yazi.nvim` (maintained fork: [mikavilpas/yazi.nvim](https://github.com/mikavilpas/yazi.nvim))
