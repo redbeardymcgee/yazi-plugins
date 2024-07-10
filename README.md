@@ -13,7 +13,7 @@ way to set this repo up to preserve the commit history better.
 
 ### Currently missing
 
-- `bookmarks-persistence.yazi`
+- `bookmarks-persistence.yazi` (missing: README, LICENSE, .gitignore)
 - `current-size.yazi`
 - `message-custom.yazi`
 - `mime.yazi`
