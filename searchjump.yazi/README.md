@@ -58,15 +58,15 @@ Chinese, for example, search `你好`, you can press `n` or `nh` to search.
 
 ```lua
 require("searchjump"):setup {
-    unmatch_fg = "#928374",
-    match_str_fg = "#000000",
-    match_str_bg = "#73AC3A",
-    lable_fg = "#EADFC8",
-    lable_bg = "#BA603D",
-    only_current = false, -- only search the current window
-    show_search_in_statusbar = true,
-    auto_exit_when_unmatch = true,
-    search_patterns = {}  -- demo:{"%.e%d+","s%d+e%d+"}
+  unmatch_fg = "#928374",
+  match_str_fg = "#000000",
+  match_str_bg = "#73AC3A",
+  lable_fg = "#EADFC8",
+  lable_bg = "#BA603D",
+  only_current = false, -- only search the current window
+  show_search_in_statusbar = true,
+  auto_exit_when_unmatch = true,
+  search_patterns = {}  -- demo:{"%.e%d+","s%d+e%d+"}
 }
 ```
 

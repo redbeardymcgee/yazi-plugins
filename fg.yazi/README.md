@@ -1,13 +1,14 @@
 # fg.yazi
 
-https://github.com/DreamMaoMao/fg.yazi/assets/30348075/4b34ff25-800f-4250-b109-172f12a8b0ce
+![Example](https://github.com/DreamMaoMao/fg.yazi/assets/30348075/4b34ff25-800f-4250-b109-172f12a8b0ce)
 
-A Yazi plugin for searching file content or filenames using `ripgrep` with `fzf` preview
+A Yazi plugin for searching filenames or contents using `ripgrep` with `fzf`
+preview.
 
 > [!NOTE]
 > The latest main branch of Yazi is required at the moment.
 >
-> Support shell: `bash`, `zsh` ,`fish` ,`nushell`
+> Supported shells: `bash`, `zsh`, `fish`, `nushell`
 
 ## Dependencies
 
@@ -21,9 +22,10 @@ A Yazi plugin for searching file content or filenames using `ripgrep` with `fzf`
 git clone https://github.com/DreamMaoMao/fg.yazi.git ~/.config/yazi/plugins/fg.yazi
 ```
 
-## Usage
+### Usage
 
-This option uses `ripgrep` to output all the lines of all files, and then uses `fzf` to fuzzy matching.
+This option uses `ripgrep` to output all the matching lines of all files, and
+then uses `fzf` to fuzzy search among the matches.
 
 ```toml
 [[manager.prepend_keymap]]
@@ -32,7 +34,9 @@ run  = "plugin fg"
 desc = "find file by content (fuzzy match)"
 ```
 
-The following option passes the input to `ripgrep` for a match search, reusing the `rg` search each time the input is changed. This is useful for searching in large folders due to increased speed, but it does not support fuzzy matching.
+This option passes the input to `ripgrep` for a search, reusing the `rg` search
+each time the input is changed. This is useful for searching in large folders
+due to increased speed, but it does not support fuzzy matching.
 
 ```toml
 [[manager.prepend_keymap]]
@@ -40,6 +44,8 @@ on   = [ "f","G" ]
 run  = "plugin fg --args='rg'"
 desc = "find file by content (ripgrep match)"
 ```
+
+This option allows fuzzy searching for files by name.
 
 ```toml
 [[manager.prepend_keymap]]
