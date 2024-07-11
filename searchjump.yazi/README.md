@@ -22,10 +22,10 @@ search_patterns = {"%.e%d+","s%d+e%d+","%d+.1080p","第%d+集"}
 
 ![Regex Example](https://github.com/DreamMaoMao/searchjump.yazi/assets/30348075/a68bd599-04c6-467a-a987-53a6684529af)
 
+## Install
+
 > [!NOTE]
 > Yazi 0.3.0 or newer is required!
-
-## Install
 
 ```bash
 ya pack -a redbeardymcgee/yazi-plugins#fg
