@@ -1413,6 +1413,7 @@ local SUPPORTED_TYPES = "application/audio/biosig/chemical/font/image/inode/mess
 
 local function match_mimetype(s)
 	local type, sub = s:match("([-a-z]+/)([+-.a-zA-Z0-9]+)%s*$")
+
 	if type and sub and string.find(SUPPORTED_TYPES, type, 1, true) then
 		return type .. sub
 	end
@@ -1424,16 +1425,17 @@ function M:fetch()
 
 	for _, file in ipairs(self.files) do
 	  local url = tostring(file.url)
-
 	  local ext = tostring(file.name):match("^.+%.(.+)$")
+
 	  if ext then
-		ext = ext:lower()
-		local ext_mime = ext_mime_map[ext]
-		if ext_mime then
-		  mimes[url] = ext_mime
-		  goto continue
-		end
+      ext = ext:lower()
+      local ext_mime = ext_mime_map[ext]
+      if ext_mime then
+        mimes[url] = ext_mime
+        goto continue
+      end
 	  end
+
 	  unmatch_ext_urls[#unmatch_ext_urls + 1] = url
 	  ::continue::
 	end
@@ -1442,15 +1444,17 @@ function M:fetch()
 	if #unmatch_ext_urls then
 		local file_one_path = os.getenv("YAZI_FILE_ONE") or "file"
 	  local command = Command(file_one_path):arg("--mime-type"):stdout(Command.PIPED):stderr(Command.PIPED)
+
 	  if ya.target_family() == "windows" then
-		command:arg("-b")
+      command:arg("-b")
 	  else
-		command:arg("-bL")
+      command:arg("-bL")
 	  end
 
 	  local i = 1
 	  local mime
 	  local output = command:args(unmatch_ext_urls):output()
+
 	  for line in output.stdout:gmatch("[^\r\n]+") do
 		if i > #unmatch_ext_urls then
 		  break
@@ -1464,7 +1468,7 @@ function M:fetch()
 			mimes[unmatch_ext_urls[i]] = mime
 		i = i + 1
 		end
-		::continue::
+      ::continue::
 	  end
 	end
 
@@ -1472,6 +1476,6 @@ function M:fetch()
 	  ya.manager_emit("update_mimetype", { updates = mimes })
 	  return 3
 	end
-	return 2
+    return 2
   end
 return M
