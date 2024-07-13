@@ -11,7 +11,7 @@ end
 
 local state = ya.sync(function() return tostring(cx.active.current.cwd) end)
 
-local function fail(s, ...) ya.notify { title = "Fzf", content = string.format(s, ...), timeout = 5, level = "error" } end
+local function fail(s, ...) ya.notify { title = "fzf", content = string.format(s, ...), timeout = 5, level = "error" } end
 
 local function entry(_, args)
 	local _permit = ya.hide()
@@ -67,7 +67,7 @@ local function entry(_, args)
 		Command(shell_value):args({"-c", cmd_args}):cwd(cwd):stdin(Command.INHERIT):stdout(Command.PIPED):stderr(Command.INHERIT):spawn()
 
 	if not child then
-		return fail("Spawn `rfzf` failed with error code %s. Do you have it installed?", err)
+		return fail("Spawn `fzf` failed with error code %s. Do you have it installed?", err)
 	end
 
 	local output, err = child:wait_with_output()
