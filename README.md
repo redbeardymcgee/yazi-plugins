@@ -3,7 +3,7 @@
 ## Goal
 
 This is a simple mirror for plugins created by DreamMaoMao after the repos were
-archived.
+privated.
 
 This is not intended to be a fork or continuation (for now). Some cleanup of the
 README files is likely, to improve the documentation where I may.
@@ -24,6 +24,5 @@ one of the plugins in this repository. Omit the `.yazi` extension.
 - `bookmarks-persistence.yazi` (missing: README, LICENSE, .gitignore)
 - `current-size.yazi`
 - `message-custom.yazi`
-- `mime.yazi`
 - `qxdrag`
 - `yazi.nvim` (maintained fork: [mikavilpas/yazi.nvim](https://github.com/mikavilpas/yazi.nvim))
