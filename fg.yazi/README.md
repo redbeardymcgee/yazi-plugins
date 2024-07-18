@@ -1,5 +1,7 @@
 # fg.yazi
 
+[upstream](https://gitee.com/DreamMaoMao/fg.yazi)
+
 ![Example](https://github.com/DreamMaoMao/fg.yazi/assets/30348075/4b34ff25-800f-4250-b109-172f12a8b0ce)
 
 A Yazi plugin for searching filenames or contents using `ripgrep` with `fzf`

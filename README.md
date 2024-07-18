@@ -22,7 +22,7 @@ one of the plugins in this repository. Omit the `.yazi` extension.
 #### Currently missing
 
 - `bookmarks-persistence.yazi` (missing: README, LICENSE, .gitignore)
-- `current-size.yazi`
+- ~`current-size.yazi`~ ([upstream](https://gitee.com/DreamMaoMao/current-size.yazi))
 - `message-custom.yazi`
 - `qxdrag`
-- `yazi.nvim` (maintained fork: [mikavilpas/yazi.nvim](https://github.com/mikavilpas/yazi.nvim))
+- ~`yazi.nvim`~ (maintained fork: [mikavilpas/yazi.nvim](https://github.com/mikavilpas/yazi.nvim))

@@ -1,5 +1,7 @@
 # git-status.yazi
 
+[upstream](https://gitee.com/DreamMaoMao/git-status.yazi)
+
 An asynchronous git message prompt plugin for Yazi.
 
 ![image1](https://github.com/DreamMaoMao/git-status.yazi/assets/30348075/3a95e25a-cf0e-4f03-8d92-e7c9cc0767bb)
