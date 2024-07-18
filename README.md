@@ -1,5 +1,7 @@
 # DreamMaoMao's yazi plugins
 
+See [upstream](https://gitee.com/DreamMaoMao) instead.
+
 ## Goal
 
 This is a simple mirror for plugins created by DreamMaoMao after the repos were
@@ -21,7 +23,7 @@ one of the plugins in this repository. Omit the `.yazi` extension.
 
 #### Currently missing
 
-- `bookmarks-persistence.yazi` (missing: README, LICENSE, .gitignore)
+- ~`bookmarks-persistence.yazi`~ (missing: README, LICENSE, .gitignore)
 - ~`current-size.yazi`~ ([upstream](https://gitee.com/DreamMaoMao/current-size.yazi))
 - `message-custom.yazi`
 - `qxdrag`
